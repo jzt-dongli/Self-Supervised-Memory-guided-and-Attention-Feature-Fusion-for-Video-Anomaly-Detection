@@ -149,7 +149,8 @@ class convAE(nn.Module):
 if __name__ == '__main__':
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    file_path = 'your_deep_features.npy'
+    file_path = 'your_deep_features_train.npy'
+    # file_path = 'your_deep_features_test.npy'
     data = np.load(file_path, allow_pickle=True)
 
     n_clusters = 500
@@ -180,3 +181,4 @@ if __name__ == '__main__':
 
     torch.save(pseudo_normal_list,'state/pseudo_list/pseudo_normal_list.pth')
     torch.save(pseudo_abnormal_list,'state/pseudo_list/pseudo_abnormal_list.pth')
+    # torch.save(pseudo_normal_list,'state/pseudo_list/test_deep_feature_memorized.pth')
