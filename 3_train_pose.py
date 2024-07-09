@@ -211,7 +211,7 @@ if __name__ == '__main__':
         avg_mem_reconstruction_loss = total_mem_reconstruction_loss / len(test_dataloader)
 
         print('\n')
-        print('total_loss: {:.6f}'.format(avg_test_loss))
-        print('gather_loss: {:.6f}'.format(avg_gather_loss))
-        print('spread_loss: {:.6f}'.format(avg_spread_loss))
-        print('mem_reconstruction_loss: {:.6f}'.format(avg_mem_reconstruction_loss))
+        print('test_total_loss: {:.6f}'.format(avg_test_loss))
+        print('test_gather_loss: {:.6f}'.format(avg_gather_loss))
+        print('test_spread_loss: {:.6f}'.format(avg_spread_loss))
+        print('test_mem_reconstruction_loss: {:.6f}'.format(avg_mem_reconstruction_loss))
