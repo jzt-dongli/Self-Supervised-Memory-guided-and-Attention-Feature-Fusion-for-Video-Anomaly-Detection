@@ -115,7 +115,7 @@ if __name__ == '__main__':
         test_losses.append(average_test_loss)
         print(f'Epoch [{epoch + 1}/{num_epochs}], Test Loss: {average_test_loss:.8f}')
 
-        # 检查是否有新的最低损失
+
         if average_test_loss < best_loss:
             best_loss = average_test_loss
             torch.save(encoder.state_dict(), f'state/ae_encoder/encoder_best_epoch.pth')
