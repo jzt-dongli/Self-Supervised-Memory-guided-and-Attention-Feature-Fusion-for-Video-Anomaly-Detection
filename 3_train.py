@@ -241,4 +241,4 @@ if __name__ == '__main__':
         print('test_total_loss: {:.6f}'.format(avg_test_loss))
         print('test_gather_loss: {:.6f}'.format(avg_gather_loss))
         print('test_spread_loss: {:.6f}'.format(avg_spread_loss))
-        print('test_reconstruction_loss: {:.6f}'.format(avg_mem_reconstruction_loss))
+        print('test_mem_reconstruction_loss: {:.6f}'.format(avg_mem_reconstruction_loss))
